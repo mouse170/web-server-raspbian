@@ -11,7 +11,7 @@
 			socket.on('updateStatus', function (data) {
 				$('#stat').text(data.stat);
 			});
-		</script>
+		</script>    	
 	</head>
 	<body>
 		<form id="input" method="POST" action="http://localhost:8080/client">
@@ -19,5 +19,7 @@
 			<input type="submit" value="Submit" />
 		</form>
 		Status: <label id="stat"></label>
+
+		<p>可使用的指令:run, up, down, left, right.</p>
 	</body>
 </html>
