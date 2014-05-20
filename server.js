@@ -32,8 +32,17 @@ var server = http.createServer(function (request, response) {
 							var command = post[key];
 							if(command.match('run')) {
 								stat = 'run';
-							} else if(command.match('rotate')) {
-								stat = 'rotate';
+							} else if(command.match('up')) {
+								stat = 'up';
+							}
+							  else if(command.match('right')) {
+								stat = 'right';
+							}
+							  else if(command.match('left')) {
+								stat = 'left';
+							}
+							  else if(command.match('down')) {
+								stat = 'down';
 							} else {
 								stat = 'Error: command not found';
 							}
